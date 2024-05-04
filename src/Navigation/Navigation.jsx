@@ -7,11 +7,11 @@ import EmployeeTable from '../Pages/EmployeeTable'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
-        <Route path='/' element={<EmployeeForm />}>
-      <Route path='/AddEmployee' element={<EmployeeTable />} />
+      <Route>
+        <Route path='/' element={<EmployeeForm />}/>
+      <Route path='/AddEmployees' element={<EmployeeTable />} />
+      </Route>
       
-      
-    </Route>
     )
 )
 
